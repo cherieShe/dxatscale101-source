@@ -3,25 +3,25 @@
         {
             "name": "env-specific",
             "version": "0.1.0.1",
-            "elapsed_time": 7,
+            "elapsed_time": 9,
             "status": "succeeded"
         },
         {
             "name": "dreamhouse-data-model",
-            "version": "0.1.0.2",
-            "elapsed_time": 116263,
+            "version": "0.1.0.3",
+            "elapsed_time": 115947,
             "status": "succeeded"
         },
         {
             "name": "dreamhouse-app",
-            "version": "0.1.0.2",
-            "elapsed_time": 386048,
+            "version": "0.1.0.3",
+            "elapsed_time": 385627,
             "status": "succeeded"
         }
     ],
     "summary": {
         "scheduled_packages": 3,
-        "elapsed_time": 514579,
+        "elapsed_time": 513184,
         "succeeded": 3,
         "failed": 0
     }

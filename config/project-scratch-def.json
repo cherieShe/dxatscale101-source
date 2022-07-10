@@ -1,0 +1,13 @@
+{
+  "orgName": "Dreamhouse",
+  "edition": "Developer",
+  "features": ["Communities","ContactsToMultipleAccounts"],
+  "settings": {
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
+      },
+      "experienceBundleSettings": {
+          "enableExperienceBundleMetadata": true
+      }
+  }
+}

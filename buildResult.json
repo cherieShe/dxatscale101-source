@@ -1,0 +1,28 @@
+{
+    "packages": [
+        {
+            "name": "env-specific",
+            "version": "0.1.0.1",
+            "elapsed_time": 7,
+            "status": "succeeded"
+        },
+        {
+            "name": "dreamhouse-data-model",
+            "version": "0.1.0.2",
+            "elapsed_time": 116263,
+            "status": "succeeded"
+        },
+        {
+            "name": "dreamhouse-app",
+            "version": "0.1.0.2",
+            "elapsed_time": 386048,
+            "status": "succeeded"
+        }
+    ],
+    "summary": {
+        "scheduled_packages": 3,
+        "elapsed_time": 514579,
+        "succeeded": 3,
+        "failed": 0
+    }
+}

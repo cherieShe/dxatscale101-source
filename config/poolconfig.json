@@ -1,0 +1,10 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Accenture/sfpowerscripts/develop/packages/sfpowerscripts-cli/resources/schemas/pooldefinition.schema.json",
+    "tag": "preparepool",
+    "maxAllocation": 3,
+    "expiry": 2,
+    "batchSize": 3,
+    "configFilePath": "config/project-scratch-def.json",
+    "enableSourceTracking": false,
+    "installAll": true
+}

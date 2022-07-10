@@ -1,0 +1,30 @@
+# Unique name for this workflow
+name: sfpowerscripts prepare
+
+# Definition when the workflow should run
+on:
+    workflow_dispatch:
+    schedule:
+        - cron: '0 0 * * *'
+
+# Jobs to be executed
+jobs:
+    prepare:
+        runs-on: ubuntu-latest
+        container: dxatscale/sfpowerscripts
+        steps:
+            # Checkout the code in the pull request
+            - name: 'Checkout source code'
+              uses: actions/checkout@v2
+              with:
+                  ref: master
+
+            # Authenticate dev hub
+            - name: 'Authenticate Dev Hub'
+              run: |
+                echo "${{ secrets.DEVHUB_SFDX_AUTH_URL }}" > ./authfile
+                sfdx auth:sfdxurl:store -f authfile -a devhub
+
+            # Prepare a pool of scratch orgs
+            - name: 'Prepare a pool of scratch orgs'
+              run: 'sfdx sfpowerscripts:orchestrator:prepare -f config/poolconfig.json -v devhub'
